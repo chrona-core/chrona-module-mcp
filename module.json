@@ -1,0 +1,12 @@
+{
+  "name": "mcp",
+  "description": "Owner MCP endpoint at /api/mcp for the user's own agents.",
+  "entry": "index.ts",
+  "keepAlive": true,
+  "listen": "/api/mcp",
+  "triggers": [],
+  "effects": [],
+  "uses": ["chat.ask", "chat.today", "chat.sessions", "chat.session", "chat.session-update", "chat.new-session", "chat.messages", "chat.transcript", "chat.runs", "chat.answer", "chat.cancel", "approvals.list", "approvals.resolve", "modules.list", "modules.tools", "*"],
+  "data": { "schema": 1 },
+  "tests": ["test.ts"]
+}
